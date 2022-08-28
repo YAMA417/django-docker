@@ -19,6 +19,10 @@ services:
       - ./database/data:/var/lib/mysql
     ports:
       - 3333:3306
-    environment:
-      MYSQL_DATABASE: 'django'
-      MYSQL_ALLOW_EMPTY_PASSWORD: 'true'
+    environment:    
+      MYSQL_ROOT_PASSWORD: Admin000              
+      MYSQL_DATABASE: django-db
+      MYSQL_USER: django
+      MYSQL_PASSWORD: django000
+      TZ: 'Asia/Tokyo'
+    command: mysqld --character-set-server=utf8 --collation-server=utf8_unicode_ci
