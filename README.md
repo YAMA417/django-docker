@@ -12,7 +12,7 @@
 
 dockerを常に起動するコマンド
 ```bash
-	docker-compose run --rm app django-admin startproject config .
+	docker-compose -d
 ```
 DBをmysqlで接続できるように設定を修正
 ```bash
