@@ -44,4 +44,24 @@ DBをmysqlで接続できるように設定を修正
 vscodeでデバックする方法
 https://daeudaeu.com/vscode-django/
 
+上記URLのlaunch.jsonはのみこちらを使用する
+```bash
+	{
+	"version": "0.2.0",
+	"configurations": [
+		{
+			"name": "Python Django",
+			"type": "python",
+			"request": "launch",
+			"program": "${workspaceFolder}/manage.py",
+			"args": [
+				"runserver",
+				"0.0.0.0:8000"
+			],
+			"django": true,
+			"justMyCode": true
+		}
+	]
+}
 
+```
