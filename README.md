@@ -12,7 +12,7 @@
 
 dockerを常に起動するコマンド
 ```bash
-	docker-compose -d
+	docker-compose up -d
 ```
 DBをmysqlで接続できるように設定を修正
 ```bash
@@ -64,4 +64,13 @@ https://daeudaeu.com/vscode-django/
 	]
 }
 
+```
+
+pc起動からlocal立ち上げまでの手順
+```
+docker-compose up -d
+vscode folderで開く
+vscodeリモート(コンテナ)接続
+↑この時点で127.0.0.1:8000 起動する
+リモート接続中のvscodeでデバッグ実行する
 ```
